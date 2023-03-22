@@ -3,7 +3,7 @@
 # Intro:
 
 Medical chat bot that makes interaction between man and machine possible by using ML and AI.
-Sometimes people are not aware of treatment for a disease. So, for a small problem, a person needs to go to the hospital for a checkup which is more time-consuming for anyone. 
+My medical chatbot is designed to provide patients with accurate and helpful medical advice. Whether patients need information on symptoms, treatments, or other medical concerns, the chatbot is dedicated to offering reliable and personalized feedback.
 Now a days people tend to seek knowledge or information from internet that concern with health through online healthcare services.
 
 # Problem Statement:
