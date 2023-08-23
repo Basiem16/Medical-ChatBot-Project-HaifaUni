@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat with the Bot</title>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="css/select2.min.css" rel="stylesheet" type="text/css"/>
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+
+        body {
+            font-family: 'Lato', sans-serif !important;
+            background-color: #FFF;
+            color: #222;
+            overflow-x: hidden;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+       
+        header {
+            display: flex;
+        justify-content: space-between; /* Positions elements at opposite ends */
+        align-items: center;
+        background-image: linear-gradient(135.9deg, rgb(109, 25, 252) 16.4%, rgb(125, 31, 165) 56.1%);
+        color: #fff;
+        padding:  60px; /* Adjust padding for spacing */
+        font-size: 24px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        width: 100%;
+        }
+
+        .header-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            max-width: 400px;
+            margin: 80px;
+            padding: 50px;
+            background-color: #f2f2f2; /* Add your desired background color here */
+            border-radius: 10px; /* Add some rounded corners for aesthetics */
+        }
+
+        .chat-container {
+            max-width: 600px;
+            margin: 80px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            border: 1px solid #6c63ff;
+        }
+        .chat-header {
+            background-image:  linear-gradient(135.9deg, rgb(109, 25, 252) 16.4%, rgb(125, 31, 165) 56.1%);
+            color: #fff;
+            padding: 15px;
+            font-size: 24px;
+            text-align: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .chat-messages {
+            padding: 30px;
+            max-height: 400px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .chat-message {
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding: 10px 15px; /* Adjust padding for better spacing */
+            max-width: 80%;
+            word-wrap: break-word;
+            display: inline-block;
+            font-size: 16px;
+            line-height: 1.5; /* Align messages to the left by default */
+        }
+        .user-message {
+            background-color: #6c63ff;
+            color: #fff;
+            align-self: flex-end;
+        
+        }
+        .bot-message {
+            background-image:  linear-gradient(135.9deg, rgb(109, 25, 252) 16.4%, rgb(125, 31, 165) 56.1%);
+            color: #fff;
+            align-self: flex-start;
+        }
+        .chat-input {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: white;
+            border-top: 1px solid #6c63ff;
+            border-radius: 10px;
+        }
+        .user-input {
+            flex: 1;
+            padding: 10px;
+            border: 2px solid #6c63ff;
+            border-radius: 20px;
+            margin-right: 10px;
+            background-color: #cccccc;
+            color: black;
+            outline: none;
+        }
+        
+
+        .send-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.send-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.send-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}   
+
+
+
+.nav-button {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.nav-button:hover {
+  background-color: #fff;
+}
+
+.nav-button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+        
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        
+        <header>
+            <button class="nav-button" role="button"><a href="http://127.0.0.1:5000/">Home page</a></button>
+            <img class="header-icon" src="https://cdn-icons-png.flaticon.com/512/4441/4441629.png" role="button" href="http://127.0.0.1:5000/" alt="Medical Icon">
+            <h1 style="margin: 0; padding: 0;">Baseem's Medical Chatbot</h1>
+            <p style="margin: 5px;">Get expert medical advice and information</p>
+        </header>
+    
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start;">
+                <div class="description">
+                    <p>Welcome to Baseem's Medical Chatbot! This chatbot is here to provide you with expert medical advice and information. Feel free to ask any medical-related questions.</p>
+                    <p>Type your question in the chatbox below and click "Send" to get a response from the chatbot.</p>
+                </div>
+                <div class="chat-container">
+                    <div class="chat-header">
+                        Let's chat? We are online
+                    </div>
+                    <div class="chat-messages" id="chat-box">
+                    <!-- Chat messages will be dynamically added here -->
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" class="user-input" id="user-input" placeholder="Type here">
+                        <button class="send-button" onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    
+    
+    <script>
+
+        function appendMessage(sender, message, isUser) {
+            const chatBox = document.getElementById('chat-box');
+            const newMessage = document.createElement('div');
+            newMessage.classList.add('chat-message');
+            newMessage.classList.add(isUser ? 'user-message' : 'bot-message');
+            newMessage.innerHTML = `<strong>${sender}:</strong> ${message}`;
+            chatBox.appendChild(newMessage);
+            chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to the bottom
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Replace "Bot" with the name of your chatbot
+            const defaultMessage = "Hello! I am Baseem's Medical Chatbot. How can I assist you today?";
+            appendMessage('Bot', defaultMessage, false);
+        });
+
+        function sendMessage() {
+            const userMessage = document.getElementById('user-input').value;
+            appendMessage('You', userMessage, true);
+            document.getElementById('user-input').value = '';
+
+            fetch('/get_response', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `user_input=${encodeURIComponent(userMessage)}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                appendMessage('Bot', data.bot_response, false);
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+

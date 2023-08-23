@@ -1,0 +1,506 @@
+{"intents": [
+  {
+    "tag" : "greetings",
+    "patterns" : ["Hello","Hey","Hi","Good Day","Greetings"],
+    "responses" : ["Hello!","Hey","What Can I do for you?"]
+  },
+
+  {
+    "tag" : "Acne",
+    "patterns" : ["blackheads","pimples","face pimples","neck pimples","shoulder pimples"],
+    "responses" : ["Acne","Acne","Acne"]
+  },
+
+  {
+    "tag" : "Attention Deficit Disorder (ADHD)",
+    "patterns" : ["impulsivity","hyperactivity","lack of focus","messy works","restlessness"],
+    "responses" : ["Attention Deficit Disorder","Attention Deficit Disorder","Attention Deficit Disorder"]
+
+  },
+
+  {
+    "tag" : "Allergies",
+    "patterns" : ["sneezing","itchy eyes","coughing","watery eyes","itchy nose"],
+    "responses" : ["Allergies","Allergies","Allergies"]
+  },
+  {
+    "tag" : "Alzheimers",
+    "patterns" : ["forgetful","confusion with time","poor judgement"],
+    "responses" : ["Alzheimers","Alzheimers","Alzheimers"]
+  },
+  {
+    "tag" : "Ankylosing Spondylitis",
+    "patterns" : ["loss of appetite","weight loss","difficulty walking","pain in heels","pain in hips","pain in jaw","decreased energy","heart failure","heart block","pain in lower back","stiffness"],
+    "responses" : ["Ankylosing Spondylitis","Ankylosing Spondylitis","Ankylosing Spondylitis"]
+
+  },
+  {
+    "tag" : "Anorexia",
+    "patterns" : ["terrifies of gaining weight","hard to sleep through night","dizziness","hair is falling out","constipation","swollen arms","swollen legs","fainting","underweight"],
+    "responses" : ["Anorexia","Anorexia","Anorexia"]
+  },
+  {
+    "tag" : "Anxiety or Panic Disorder",
+    "patterns" : ["rapid heartbeat","fast heartbeat","sweating","shaking","shortness of breath","fear of death","chest pain","faintness"],
+    "responses" : ["Anxiety or Panic Disorder","Anxiety or Panic Disorder","Anxiety or Panic Disorde"]
+  },
+  {
+    "tag" : "Arthritis",
+    "patterns" : ["lack of movement","sored area","joint pain"],
+    "responses" : ["Arthritis","Arthritis","Arthritis"]
+  },
+  {
+    "tag" : "Antitrypsin Deficiency",
+    "patterns" : ["jaundice","yellow skin","coughing up blood","yellow urine"],
+    "responses" : ["Antitrypsin Deficiency","Antitrypsin Deficiency","Antitrypsin Deficiency"]
+  },
+  {
+    "tag" : "Abdominal Migraine",
+    "patterns" : ["dark shadows under eyes","be pale","have little energy","feeling drowsy","unable to eat"],
+    "responses" : ["Abdominal Migraine","Abdominal Migraine","Abdominal Migraine"]
+  },
+  {
+    "tag" : "Amyloidosis",
+    "patterns" : ["sudden weight loss","feeling of fullness","shortness of breath","tongue swelling","severe fatigue","severe weakness","irregular heartbeat"],
+    "responses" : ["Amyloidosis","Amyloidosis","Amyloidosis"]
+
+  },
+  {
+    "tag" : "Abscessed Tooth",
+    "patterns" : ["trouble swallowing","trouble breathing","bad taste","gum redness","sensitivity","bad odor in mouth"],
+    "responses" : ["Abscessed Tooth","Abscessed Tooth","Abscessed Tooth"]
+  },
+  {
+    "tag" : "Amenorrhea",
+    "patterns" : ["hair loss","change in vision","hair growth on face","pain in pelvic area"],
+    "responses" : ["Amenorrhea","Amenorrhea","Amenorrhea"]
+  },
+  {
+    "tag" : "Absence Seizure",
+    "patterns" : ["sudden stop in motion","lip smacking","eyelid fluttering","finger rubbing"],
+    "responses" : ["Absence Seizure","Absence Seizure","Absence Seizure"]
+  },
+  {
+    "tag" : "Sleep Apnea",
+    "patterns" : ["loud snoring","loud gasping","loud choking","excessive sweating at night"],
+    "responses" : ["Sleep Apnea","Sleep Apnea","Sleep Apnea"]
+  },
+  {
+    "tag" : "Achalasia",
+    "patterns" : ["food coming back up into the throat","nighttime coughing","heart is burning","hurt is belching"],
+    "responses" : ["Achalasia","Achalasia","Achalasia"]
+  },
+  {
+    "tag" : "Appendicitis",
+    "patterns" : ["pain in lower belly","pain near navel","belly pain and vomiting","swollen belly","severe cramps","difficulty in peeing","constipation with gas"],
+    "responses" : ["Appendicitis","Appendicitis","Appendicitis"]
+  },
+  {
+    "tag" : "Aparaxia of Speech",
+    "patterns" : ["unable to form proper words","unable to say complex words","speech inconsistencies","distortion in vowel sounds"],
+    "responses" : ["Aparaxia of Speech"," Aparaxia of Speech","Aparaxia of Speech"]
+  },
+  {
+    "tag" : "Arachnoiditis",
+    "patterns" : ["weakness in the legs","numbness in legs","ringing in ears","bladder problems"],
+    "responses" : ["Arachnoiditis","Arachnoiditis","Arachnoiditis"]
+  },
+  {
+    "tag" : "Acute Respiratory Distress Syndrome (ARDS)",
+    "patterns" : ["shortness of breath","low blood pressure","fast breathing","fast heartbeat","exhaustion","blue tinted lips","blue tinted nails"],
+    "responses" : ["Acute Respiratory Distress Syndrome (ARDS)","Acute Respiratory Distress Syndrome (ARDS)","Acute Respiratory Distress Syndrome (ARDS)"]
+  },
+  {
+    "tag" : "Anemia",
+    "patterns" : ["fatigue","weakness","pale skin","yellowish skin","shortness of breath","cold hands","cold feet"],
+    "responses" : ["Anemia","Anemia","Anemia"]
+  },
+  {
+    "tag" : "Arrhythmia",
+    "patterns" : ["palpitations","chest pounding","breath shortness","blurry vision","anxiety"],
+    "responses" : ["Arrhythmia","Arrhythmia","Arrhythmia"]
+  },
+  {
+    "tag" : "Asthma",
+    "patterns" : ["coughing at night","wheezing","chest pain","frequent cough","feeling tired","easily upset","trouble in sleeping","pale face","sweaty face"],
+    "responses" : ["According to your symptoms you might have Asthma","You have Asthma","I suppose you have Asthma"]
+  },
+  {
+    "tag" : "Autism",
+    "patterns" : ["delayed language","delayed learning","delayed movement","unusual mood","unusual eating habits","unusual sleeping habits","no facial expression"],
+    "responses" : ["Autism","Autism","Autism"]
+  },
+  {
+    "tag" : "Blepharitis",
+    "patterns" : ["feels like something in the eye","a burning feeling in the eye","blurry vision","sensitivity to light","dry eyes","red eyes","watery eyes"],
+    "responses" : ["Blepharitis","Blepharitis","Blepharitis"]
+  },
+  {
+    "tag" : "Bacterial Arthritis",
+    "patterns" : ["having chills","unable to move the limb with the infected joint","Severe pain in the affected joint"],
+    "responses" : ["Bacterial Arthritis","Arthritis","Backterial Arthritis"]
+  },
+  {
+    "tag" : "Bacterial Meningitis",
+    "patterns" : ["feeling confused","numbness in my face","neck is stiff","hard time concentrating","seizures","lack of appetite"],
+    "responses" : ["Bacterial Meningitis","Meningitis","Meningitis"]
+  },
+  {
+    "tag" : "Benign Prostate Enlargement(BPE)",
+    "patterns" : ["makes it difficult to urinate","need to urinate frequently","wake up frequently in the night to urinate","difficulty in passing urine"],
+    "responses" : ["Benign Prostate Enlargement Disease","Benign Prostate Enlargement Disease","Benign Prostate Enlargement Disease"]
+  },
+  {
+    "tag" : "Bipolar Disorder",
+    "patterns" : ["feeling depressed","lacking energy","loss of interest","feeling worthless","being pessimistic about everything","being delusional","suicidal thoughts","feeling full of energy","easily irritated"],
+    "responses" : ["Bipolar Disorder Disease","Bipolar Disorder Disease","Bipolar Disorder Disease"]
+  },
+  {
+    "tag" : "Bronchiectasis",
+    "patterns" : ["persistent cough with large amount of phlegm","coughing up blood","coughing up blood-stained phlegm"],
+    "responses" : ["Bronchiectasis Disease","Bronchiectasis Disease","Bronchiectasis Disease"]
+
+  },
+  {
+    "tag" : "Bronchitis",
+    "patterns" : ["blocked nose","runny or blocked nose","tiredness","cough with phlegm","cough with yellow gray phlegm"],
+    "responses" : ["Bronchitis Disease","Bronchitis Disease","Bronchitis Disease"]
+  },
+  {
+    "tag" : "Bulimia",
+    "patterns" : ["over eating","think about food all time","overeats","focus in body image"],
+    "responses" : ["Bulimia Disease","Bulimia Disease","Bulimia Disease"]
+  },
+  {
+    "tag" : "Catarrh",
+    "patterns" : ["constantly need to clear throat","blocked or stuffy nose can't clear","throat blocked","reduced sense of smell","reduced sense of taste","temporary hearing loss"],
+    "responses" : ["Catarrh Disease","Catarrh Disease","Catarrh Disease"]
+  },
+  {
+    "tag" : "Cellulitis",
+    "patterns" : ["red skin","hot skin","swollen skin","tender skin"],
+    "responses" : ["Cellulitis Disease","Cellulitis Disease","Cellulitis Disease"]
+  },
+  {
+    "tag" : "Chest Infection",
+    "patterns" : ["rapid heart beat","chest tightness","feeling confused"],
+    "responses" : ["Chest Infection","Chest Infection","Chest Infection"]
+  },
+  {
+    "tag" : "Chest Pain",
+    "patterns" : ["chest feels heavy","chest feels tight","pain in chest and arms back and jaw","breathlessness"],
+    "responses" : ["Chest Pain","Chest Pain","Chest Pain"]
+  },
+  {
+    "tag" : "Chronic Fatigue Syndrome",
+    "patterns" : ["sleep disturbance","poor temperature control","dizziness","hyper sensitive to light","hyper sensitive to sound","speech problem","language problem","problem with concentration","problem with thinking"],
+    "responses" : ["Chronic Fatigue Syndrome","Chronic Fatigue Syndrome","Chronic Fatigue Syndrome"]
+  },
+  {
+    "tag" : "Common Cold",
+    "patterns" : ["sore throat","sneezing","coughing","hoarse voice","headache","ear ache","blocked nose","runny nose"],
+    "responses" : ["Common Cold","Common Cold","Common Cold"]
+  },
+  {
+    "tag" : "Conjunctivitis",
+    "patterns" : ["eye redness","burning sensation in eyes","sticky coating on eye lashes","disturbed vision","intense red in eyes"],
+    "responses" : ["Conjunctivitis","Conjunctivitis","Conjunctivitis"]
+  },
+  {
+    "tag" : "Dehydration",
+    "patterns" : ["light-headedness","tiredness","dry mouth","dry lips","infrequent urine"],
+    "responses" : ["Dehydration","Dehydration","Dehydration"]
+  },
+  {
+    "tag" : "Dental Abscess",
+    "patterns" : ["intense pain in tooth","intense pain in gum","tooth pain spreads to ear jaw and neck","tender tooth","discoloured tooth","bad breath","sensitive to hot and cold"],
+    "responses" : ["Dental Abscess","Dental Abscess","Dental Abscess"]
+  },
+  {
+    "tag" : "Depression",
+    "patterns" : ["continuous sadness","mood off","losing interest in things","losing motivation","feeling anxious","feeling guilty","feeling helpless","feeling hopeless","low self esteem","speaking slower than usual","feeling worried"],
+    "responses" : ["Depression","Depression","Depression"]
+  },
+  {
+    "tag" : "Diabetes",
+    "patterns" : ["feeling very thirsty","loss of muscle bulk","feeling very tired","wounds heal slowly"],
+    "responses" : ["Diabetes","Diabetes","Diabetes"]
+  },
+  {
+    "tag" : "Diarrhoea",
+    "patterns" : ["stomach cramps","pale skin","cold hands","cold feet","feeling drowsy","rapid heartbeat"],
+    "responses" : ["Diarrhoea","Diarrhoea","Diarrhoea"]
+  },
+  {
+    "tag" : "Dystonia",
+    "patterns" : ["muscle spasms","abnormal posture","twisted posture","foot turning inwards","body parts jerking rapidly"],
+    "responses" : ["Dystonia","Dystonia","Dystonia"]
+  },
+  {
+    "tag" : "Epilepsy",
+    "patterns" : ["experienced the events before","unusual smell or taste","tingling sensation in arms and legs","sudden feeling of fear or joy"],
+    "responses" : ["Epilepsy","Epilepsy","Epilepsy"]
+  },
+  {
+    "tag" : "Escherichia Coli",
+    "patterns" : ["diarrhoea","stomach cramps","occasionally fever"],
+    "responses" : ["Escherichia Coli","Escherichia Coli","Escherichia Coli"]
+  },
+  {
+    "tag" : "Flu",
+    "patterns" : ["sudden fever","dry cough","chesty cough","chills","aching muscles","sore throat"],
+    "responses" : ["Flu","Flu","Flu"]
+  },
+  {
+    "tag" : "Fetal alcohol spectrum disorder",
+    "patterns" : ["hyperactivity","impulsivity","sensory difficulties","attention deficiency"],
+    "responses" : ["Fetal alcohol spectrum disorder","Fetal alcohol spectrum disorder","Fetal alcohol spectrum disorder"]
+  },
+  {
+    "tag" : "Food poisoning",
+    "patterns" : ["nausea","diarrhoea","abdominal pain","chills","aching muscles","fever","stomach cramps","vomiting"],
+    "responses" : ["Food poisoning","have Food poisoning","Food poisoning"]
+  },
+  {
+    "tag" : "Fungal nail infection",
+    "patterns" : ["discolouration of the nail","brittle nails","crumbly nails","distorted nails"],
+    "responses" : ["Fungal nail infection","Fungal nail infection","Fungal nail infection"]
+  },
+  {
+    "tag" : "Gallbladder cancer",
+    "patterns" : ["abdominal pain","stomach pain","jaundice","loss of appetite","swollen stomach","weight loss"],
+    "responses" : ["Gallbladder cancer","Gallbladder cancer","Gallbladder cancer"]
+  },
+  {
+    "tag" : "Gallstones",
+    "patterns" : ["jaundice","persistent abdominal pain","fever"],
+    "responses" : ["Gallstones","Gallstones","Gallstones"]
+  },
+  {
+    "tag" : "Ganglion cyst",
+    "patterns" : ["joint pain","cysts in wrist","swelling"],
+    "responses" : ["Ganglion cyst","Ganglion cyst","Ganglion cyst"]
+  },
+  {
+    "tag" : "Gastroenteritis",
+    "patterns" : ["diarrhoea","vomiting","mild fever","aching limbs","headache","upset stomach","loss of appetite"],
+    "responses" : ["Gastroenteritis","Gastroenteritis","Gastroenteritis"]
+  },
+  {
+    "tag" : "Gastro-oesophageal reflux disease (GORD)",
+    "patterns" : ["heartburn","bad breath","belching","acid reflux","pain when swallowing"],
+    "responses" : ["Gastro-oesophageal reflux disease (GORD)","Gastro-oesophageal reflux disease (GORD)","Gastro-oesophageal reflux disease (GORD)"]
+  },
+  {
+    "tag" : "Genital herpes",
+    "patterns" : ["pain peeing","genital pain","swelling in groin","blisters","vaginal discharge","rectal pain"],
+    "responses" : ["Genital herpes","Genital herpes","Genital herpes"]
+  },
+  {
+    "tag" : "Genital warts",
+    "patterns" : ["lumps around genitals","warts","vaginal outgrowth","lumps around penis"],
+    "responses" : ["Genital warts","Genital warts","Genital warts"]
+  },
+  {
+    "tag" : "Germ cell tumours",
+    "patterns" : ["lump","olk-sac tumours"],
+    "responses" : ["Germ cell tumours","Germ cell tumours","Germ cell tumours"]
+  },
+  {
+    "tag" : "Glandular fever",
+    "patterns" : ["fever","swollen glands","sore throat","fatigue","extreme tiredness"],
+    "responses" : ["Glandular fever","Glandular fever","Glandular fever"]
+  },
+  {
+    "tag" : "Gonorrhoea",
+    "patterns" : ["pain while urinating","pain in lower abdomen","bleeding after sex","swelling of the testicles","yellow fluid discharge","increased vaginal discharge"],
+    "responses" : ["Gonorrhoea","Gonorrhoea","Gonorrhoea"]
+  },
+  {
+    "tag" : "Gout",
+    "patterns" : ["joint pain","shiny skin over joints","swelling of joints","tender joints"],
+    "responses" : ["Gout","Gout","Gout"]
+  },
+  {
+    "tag" : "Gum disease",
+    "patterns" : ["bad breath","bleeding in gums","swelling in gums","sore gums","bleeding while brushing"],
+    "responses" : ["According to your symptoms you might have Gum disease","You have Gum disease","I suppose you have Gum disease"]
+  },
+  {
+    "tag" : "Haemorrhoids (piles)",
+    "patterns" : ["mucus discharge after passing a stool","itchy bottom","bleeding after defecating","soreness in anus","swelling around anus","redness around anus"],
+    "responses" : [" Haemorrhoids (piles)","Haemorrhoids (piles)","Haemorrhoids (piles)"]
+  },
+  {
+    "tag" : "Hand, foot and mouth disease",
+    "patterns" : ["coughing","sore throat","sore mouth","loss of appetite","fever","abdominal pain","mouth ulcers","blisters","spotty rash"],
+    "responses" : ["Hand, foot and mouth disease","Hand, foot and mouth disease","Hand, foot and mouth disease"]
+  },
+  {
+    "tag" : "Hay fever",
+    "patterns" : ["sneezing","itchy eyes","runny nose"],
+    "responses" : ["Hay fever","Hay fever","Hay fever"]
+  },
+  {
+    "tag" : "Head and neck cancer",
+    "patterns" : ["persistent mouth ulcers","lump in mouth","persistent hoarseness","a persistent cough","lump or swelling in neck","shortness of breath","noisy breathing","difficulty or pain when swallowing","numbness in face","drooping on one side of face","nosebleeds","a persistent blocked nose","decreased sense of smell","hearing loss"],
+    "responses" : ["Head and neck cancer","Head and neck cancer","Head and neck cancer"]
+  },
+  {
+    "tag" : "Head lice and nits",
+    "patterns" : ["itchy scalp","rash on the back of the neck","small white eggs or nits in the hair"],
+    "responses" : ["Head lice and nits","Head lice and nits","Head lice and nits"]
+  },
+  {
+    "tag" : "Headaches",
+    "patterns" : ["stress","dehydration","nausea","vomiting","ncreased sensitivity to light or sound","watering or red eye","blocked or runny nose"],
+    "responses" : ["Headaches","Headaches","Headaches"]
+  },
+  {
+    "tag" : "Hearing loss",
+    "patterns" : ["difficulty hearing","misunderstanding other people","asking people to repeat themselves"],
+    "responses" : ["Hearing loss","Hearing loss","Hearing loss"]
+  },
+  {
+    "tag" : "Heart failure",
+    "patterns" : ["breathlessness","tiredness and lethargy","leg swelling","loss of appetite"],
+    "responses" : ["Heart failure","Heart failure","Heart failure"]
+  },
+  {
+    "tag" : "Hepatitis A",
+    "patterns" : ["joint and muscle pain","fever","loss of appetite","itchy skin","dark urine","pale stools","jaundice","tiredness"],
+    "responses" : ["Hepatitis A","Hepatitis A","Hepatitis A"]
+  },
+  {
+    "tag" : "Hepatitis B",
+    "patterns" : ["loss of appetite","diarrhoea","abdominal pain","tiredness","fever","flu"],
+    "responses" : ["Hepatitis B","Hepatitis B","Hepatitis B"]
+  },
+  {
+    "tag" : "Hepatitis C",
+    "patterns" : ["tiredness","flu","loss of appetite","abdominal pain","muscle ache","fever"],
+    "responses" : ["Hepatitis C","Hepatitis C","Hepatitis C"]
+  },
+  {
+    "tag" : "Hiatus hernia",
+    "patterns" : ["weak diaphragm","pressure on abdomen","leaking stomach acid","scarring on stomach"],
+    "responses" : ["Hiatus hernia","Hiatus hernia","Hiatus hernia"]
+  },
+  {
+    "tag" : "High cholesterol",
+    "patterns" : ["overweight","high blood pressure","diabetes","stroke","heart attack"],
+    "responses" : ["High cholesterol","High cholesterol","High cholesterol"]
+  },
+  {
+    "tag" : "HIV",
+    "patterns" : ["fever","swollen glands","rash","upset stomach","headache","muscle pain","joint pain"],
+    "responses" : ["HIV","HIV","HIV"]
+  },
+  {
+    "tag" : "Huntington's disease",
+    "patterns" : ["problem in movement","problem in cognition","mood swings","personality changes","irritability",""],
+    "responses" : ["Huntington's disease","Huntington's disease","Huntington's disease"]
+  },
+  {
+    "tag" : "Hyperglycaemia (high blood sugar)",
+    "patterns" : ["increased thirst","dry mouth","tiredness","blurred vision","unintentional weight loss","skin infection","thrush","recurrent infections","bladder infections","frequent urge to urinate"],
+    "responses" : ["Hyperglycaemia (high blood sugar)","Hyperglycaemia (high blood sugar)","Hyperglycaemia (high blood sugar)"]
+  },
+  {
+    "tag" : "Hyperhidrosis",
+    "patterns" : ["excessive sweating","socially withdrawn","swelling in armpits","swelling in palms","swelling in groin","swelling in soles","swelling in face and chest"],
+    "responses" : ["Hyperhidrosis","Hyperhidrosis","Hyperhidrosis"]
+  },
+  {
+    "tag" : "Hypoglycaemia (low blood sugar)",
+    "patterns" : ["hunger","trembling","shakiness","sweating","difficulty concentrating","disturbed sleep","confused upon waking"],
+    "responses" : ["Hypoglycaemia (low blood sugar)","Hypoglycaemia (low blood sugar)","Hypoglycaemia (low blood sugar)"]
+  },
+  {
+    "tag" : "Idiopathic pulmonary fibrosis",
+    "patterns" : ["shortness of breath","tiredness","persistent dry cough","loss of appetite","loss of weight","swollen fingertips","clubbed fingers"],
+    "responses" : ["Idiopathic pulmonary fibrosis","Idiopathic pulmonary fibrosis","Idiopathic pulmonary fibrosis"]
+  },
+  {
+    "tag" : "Impetigo",
+    "patterns" : ["red sores around nose","fever"," swollen glands","blisters"],
+    "responses" : ["Impetigo","Impetigo","Impetigo"]
+  },
+  {
+    "tag" : "Indigestion",
+    "patterns" : ["bloatedness","belching","regurgitation","nausea","feeling full"],
+    "responses" : ["Indigestion","Indigestion","Indigestion"]
+  },
+  {
+    "tag" : "Ingrown toenail",
+    "patterns" : ["inflammation in toe","yellow pus from toe","oedema","curling of nail"],
+    "responses" : ["Ingrown toenail","Ingrown toenail","Ingrown toenail"]
+  },
+  {
+    "tag" : "Inherited heart conditions",
+    "patterns" : ["palpitations","fainting","blackouts"],
+    "responses" : ["Inherited heart conditions","Inherited heart conditions","Inherited heart conditions"]
+  },
+  {
+    "tag" : "Insomnia",
+    "patterns" : ["difficulty in sleeping","awake for long periods","not feeling refreshed after waking","difficulty napping","difficulty concentrating","irritable"],
+    "responses" : ["Insomnia","Insomnia","Insomnia"]
+  },
+  {
+    "tag" : "Iron deficiency anaemia",
+    "patterns" : ["tiredness","lethargy","lack of energy","shortness of breath","pale complexion","heart palpitations","headache","feeling itchy","difficulty swallowing","abnormally smooth tongue","hair loss"],
+    "responses" : ["Iron deficiency anaemia","Iron deficiency anaemia","deficiency anaemia"]
+  },
+  {
+    "tag" : "Irritable bowel syndrome (IBS)",
+    "patterns" : ["abdominal pain","diarrhoea","constipation","bloating","excessive flatulence","lethargy","heartburn","cramping"],
+    "responses" : ["Irritable bowel syndrome (IBS)","Irritable bowel syndrome (IBS)","Irritable bowel syndrome (IBS)"]
+  },
+  {
+    "tag" : "Irritable hip",
+    "patterns" : ["slightly higher temperature","pain in the knee","thigh pain","estricted movement in hip joints","limping","hip pain"],
+    "responses" : ["Irritable hip","Irritable hip","Irritable hip"]
+  },
+  {
+    "tag" : "Itching",
+    "patterns" : ["Redness","leathery or scaly patches","scratch marks","blisters","cracked skin","itchy skin","itchness all over body","dry skin","persistent itch"],
+    "responses" : ["Itching","Itching","Itching"]
+  },
+  {
+    "tag" : "Itchy bottom",
+    "patterns" : ["persistent anal itch","anal bleeding","stool leakage","severe rectal itch","itchness in  bottom"],
+    "responses" : ["Itchy bottom","Itchy bottom","Itchy bottom"]
+  },
+  {
+    "tag" : "Kaposi's sarcoma",
+    "patterns" : ["uncomfortable swelling","nausea","vomiting","","coughing up blood","chest pain","stomach pain"],
+    "responses" : ["Kaposi's sarcoma","Kaposi's sarcoma","Kaposi's sarcoma"]
+  },
+  {
+    "tag" : "Kidney infection",
+    "patterns" : ["pus in kidney","shivering","pain in the back","painful urination","fever"],
+    "responses" : ["Kidney infection","Kidney infection","Kidney infection"]
+  },
+  {
+    "tag" : "Kidney stones",
+    "patterns" : ["persistent ache in lower back","periods of intense pain","nausea","pain while urination","blood in urine","gfrequent urge to urinate","restlessness"],
+    "responses" : ["Kidney stones","Kidney stones","Kidney stones"]
+  },
+
+  {
+    "tag" : "Unknown",
+    "patterns" : [],
+    "responses" : ["Sorry I didn't understand what you said","Sorry I didn't catch that","Sorry I can't recognize you , Please try again"]
+  },
+  {
+    "tag" : "Goodbye",
+    "patterns" : ["Thank You, Goodbye","See you","Bye","goodbye"],
+    "responses"  : ["Have a Nice day","Thank You to you too","Talk to you later!","GoodBye!"]
+  },
+  {
+    "tag" : "Yes",
+    "patterns" : ["Yes","yes","YES"],
+    "responses"  : ["Will add your appointment","Appointment is sent to admin","Appointment Succesfull"]
+  }
+]
+}
